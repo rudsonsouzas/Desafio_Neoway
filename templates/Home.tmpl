@@ -1,0 +1,31 @@
+{{ define "Home" }}
+  {{ template "Header" }}
+    <b><center><h1><font face="Tahoma" size="7" color="black"> App para Migração de Dados </font></h1></center></b></br>
+
+    <b><center><h1><font face="Tahoma" size="5" color="black"> Opções </font></h1></center></b></br>
+    
+    <table border="1" bordercolor="white" cellspacing="0" cellpading="40" width="40%"  align="center">
+      <tr>
+				<td ALIGN="CENTER"  valign="CENTER">
+          <form method="GET" action=" http://localhost:8090/show">
+          <button type="submit">Dados do Cliente</button>
+        </form>
+        <td ALIGN="CENTER"  valign="CENTER">
+          <form method="GET" action=" http://localhost:8090/showjson">
+          <button type="submit">Dados do Cliente - JSON</button>
+        </form>
+        </td>
+        <td ALIGN="CENTER"  valign="CENTER">
+          <form method="GET" action=" http://localhost:8090/delete">
+          <button type="submit">Excluir Dados</button>
+        </form>
+        </td>
+        <td ALIGN="CENTER"  valign="CENTER">
+          <form method="GET" action=" http://localhost:8090/migrar">
+          <button type="submit">Migrar Dados</button>
+        </form>
+        </td>
+			</tr>
+    </table>  
+  {{ template "Footer" }}
+{{ end }}

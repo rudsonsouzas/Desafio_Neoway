@@ -1,0 +1,31 @@
+{{ define "Show" }}
+  {{ template "Header" }}
+  {{ template "Menu" }}
+    <b><center><h1><font face="Tahoma" size="5" color="black"> Dados dos Clientes </font></h1></center></b></br>
+
+     <table border="1" bordercolor="grey" cellspacing="0" cellpading="40" width="60%"  align="center">
+      <thead>
+      <tr>
+        <td width="16%"  ALIGN="CENTER"  valign="CENTER" bgcolor="#FFD700" ><font face="Tahoma" size="2" ><b>CPF</b></font></td>
+        <td width="16%"  ALIGN="CENTER"  valign="CENTER" bgcolor="#FFD700" ><font face="Tahoma" size="2" ><b>Data Ult Compra</b></font></td>
+        <td width="16%"  ALIGN="CENTER"  valign="CENTER" bgcolor="#FFD700" ><font face="Tahoma" size="2" ><b>Ticket Medio</b></font></td>
+        <td width="20%"  ALIGN="CENTER"  valign="CENTER" bgcolor="#FFD700" ><font face="Tahoma" size="2" ><b>Ticket Ult Compra</b></font></td>
+        <td width="20%"  ALIGN="CENTER"  valign="CENTER" bgcolor="#FFD700" ><font face="Tahoma" size="2" ><b>Loja Usual</b></font></td>
+        <td width="20%"  ALIGN="CENTER"  valign="CENTER" bgcolor="#FFD700" ><font face="Tahoma" size="2" ><b>Loja Ult Compra</b></font></td>
+      </tr>
+       </thead>
+       <tbody>
+    {{ range . }}
+      <tr>
+        <td ALIGN="RIGHT" valign="CENTER"  cellpadding="55"><font color="black" face="Tahoma" size="2">{{ .Cpf }}</font></td>
+        <td ALIGN="RIGHT" valign="CENTER"  cellpadding="55"><font color="black" face="Tahoma" size="2">{{ .DataUltCompra }}</font></td>
+        <td ALIGN="RIGHT" valign="CENTER"  cellpadding="55"><font color="black" face="Tahoma" size="2">{{ .TicketMed }}</font></td>
+        <td ALIGN="RIGHT" valign="CENTER"  cellpadding="55"><font color="black" face="Tahoma" size="2">{{ .TicketUltCompra }}</font></td>
+        <td ALIGN="LEFT"  valign="CENTER"  cellpadding="55"><font color="black" face="Tahoma" size="2">{{ .LojaUsual }}</font></td>
+        <td ALIGN="LEFT"  valign="CENTER"  cellpadding="55"><font color="black" face="Tahoma" size="2">{{ .LojaUltCompra }}</font></td> 
+      </tr>
+    {{ end }}
+       </tbody>
+    </table>
+  {{ template "Footer" }}
+{{ end }}

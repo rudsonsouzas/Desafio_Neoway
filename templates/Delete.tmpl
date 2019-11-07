@@ -1,0 +1,9 @@
+{{ define "Delete" }}
+  {{ template "Header" }}
+  {{ template "Menu" }}
+  {{$number := .}}
+    <b><center><h1><font face="Tahoma" size="5" color="black"> Dados Removidos com Sucesso! </font></h1></center></b></br>
+
+    <b><center><h2><font face="Tahoma" size="3" color="black"> Foram removidos {{$number}} registros. </font></h1></center></b></br>
+  {{ template "Footer" }}
+{{ end }}
