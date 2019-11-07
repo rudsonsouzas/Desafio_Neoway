@@ -18,7 +18,7 @@ Em seguida execute o script 'iniciar.sh', presente na raiz do repositório, para
 
 Acesse em seu navegador de preferência o seguinte endereço: http://localhost:8090
 
-Será exibida a tela abaixo:
+Será exibida a tela do link: https://drive.google.com/file/d/1foLhz9Ms1aXlKTGopw5DpOpgVTGnztkX/view?usp=sharing
 
 A aplicação possui quatro botões: 
 • "Dados do Cliente", exibe as informações dos clientes no formato HTML;
