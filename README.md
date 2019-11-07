@@ -21,9 +21,13 @@ Acesse em seu navegador de preferência o seguinte endereço: http://localhost:8
 Será exibida a tela do link: https://drive.google.com/file/d/1foLhz9Ms1aXlKTGopw5DpOpgVTGnztkX/view?usp=sharing
 
 A aplicação possui quatro botões: 
+
 • "Dados do Cliente", exibe as informações dos clientes no formato HTML;
+
 • "Dados do Cliente - JSON", exibe as informações dos clientes no formato JSON;
+
 • "Excluir Dados", remove todos os dados da aplicação;
+
 • "Migrar Dados", migra todos os dados do arquivo txt/csv para a aplicação.
 
 Para encerrar a aplicação, execute o script 'encerrar.sh', presente na raiz do repositório.
